@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <meta charset="utf-8">
+            <title>Formulario de solicitud</title>
+        </head>
+
+        <body>
+            <!--Se abre un formulario de 400 pixeles de ancho, con unión al archivo Resultados.php y con método de petición POST-->
+            <form style="width:400px" action="Resultados.php" method="POST">
+                <fieldset>
+                    <!--Se agrega un título al formulario-->
+                    <legend>Solicitud de Ingreso a Harvard</legend>  
+                    <!--Se escribe la etiqueta label y se anota el rótulo Nombre-->
+                    <label>Nombre(s):
+                        <!--Se agrega el input de texto para que el aspirante introduzca su nombre-->
+                        <input type="text" name="name" placeholder="Ingrese un nombre" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de texto para que el aspirante introduzca su apellido paterno-->
+                    <label>Apellido Paterno:
+                        <input type="text" name="lastname1" placeholder="Ingrese un apellido" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de texto para que el aspirante introduzca su apellido materno-->
+                    <label>Apellido Materno:
+                        <input type="text" name="lastname2" placeholder="Ingrese un apellido" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de radio para que el aspirante seleccione su sexo-->
+                    <label>Sexo:
+                        <input type="radio" name="sex" value="Hombre" required>Hombre
+                        <input type="radio" name="sex" value="Mujer" required>Mujer
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de número para que el aspirante introduzca su edad, esta debe ser entre 17 y 35 años-->
+                    <label>Edad:
+                        <input type="number" name="age" min="17" max="35" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de email para que el aspirante introduzca su correo electrónico-->
+                    <label>Correo Electrónico:
+                        <input type="email" name="mail" placeholder="Ingrese un correo" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de número para que el aspirante introduzca su teléfono-->
+                    <label>Teléfono:
+                        <input type="number" name="tel" placeholder="Ingrese un teléfono" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de número para que el aspirante introduzca su celular-->
+                    <label>Celular:
+                        <input type="number" name="cel" placeholder="Ingrese un celular" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega una estructura select para que el aspirante seleccione su escuela de procedencia-->
+                    <label>Escuela de procedencia:<br>
+                        <select name="college" required>
+                            <option value="Escuela Nacional Preparatoria (ENP)">Escuela Nacional Preparatoria (ENP)</option>
+                            <option value="Colegio de Ciencias y Humanidades (CCH)">Colegio de Ciencias y Humanidades (CCH)</option>
+                            <option value="Instituto Politécnico Nacional (IPN)">Instituto Politécnico Nacional (IPN)</option>
+                        </select>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de número para que el aspirante introduzca su promedio, este va de 5 a 10-->
+                    <label>Promedio:
+                        <input type="number" name="average" min="5" max="10" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de texto para que el aspirante introduzca su primera opción de carrera-->
+                    <label>Primera opción:
+                        <input type="text" name="option1" placeholder="Ingrese primera opción" required>
+                    </label>
+                    <br><br>
+                    <!--Se agrega el input de texto para que el aspirante introduzca su segunda opción de carrera-->
+                    <label>Segunda opción:
+                        <input type="text" name="option2" placeholder="Ingrese segunda opción" required>
+                    </label>
+                    <br><br>
+                    <!--Se agregan los inputs para enviar y limpiar los campos del formulario-->
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpiar">
+                </fieldset>
+            </form>
+        </body>
+</html>
