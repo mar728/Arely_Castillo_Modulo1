@@ -59,10 +59,10 @@
 
     /*Esto es para comprobar los valores de las variables que llevan el conteo de las respuestas del formulario y ver que sí corresponde 
     a la respuesta del arreglo que debe ser*/
-    echo $letraA;
+    /*echo $letraA;
     echo $letraB;
     echo $letraC;
-    echo $letraD;
+    echo $letraD;*/
 
     //Si la variable "letraA" es mayor al resto de las variables se imprime en pantalla el valor correspondiente a la llave "A" del arreglo "tacos"
     if($letraA > $letraB && $letraA > $letraC && $letraA > $letraD){
